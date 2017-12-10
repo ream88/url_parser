@@ -12,10 +12,10 @@ defmodule UrlParserTest do
   end
 
   test "it parses a url without a scheme" do
-    @result = UrlParser.parse("www.google.com")
+    @result = UrlParser.parse("www.google.com/")
   end
 
-  test "it parses a url without a scheme, domain and path" do
+  test "it parses a url without a scheme and path" do
     @result = UrlParser.parse("www.google.com")
   end
 end
